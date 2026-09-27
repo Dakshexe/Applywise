@@ -1,0 +1,30 @@
+@import "tailwindcss";
+@source "./pages/Home.jsx";
+
+@theme {
+  --font-sans: "Outfit", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Fraunces", Georgia, serif;
+  --color-ink: #16141a;
+  --color-paper: #f3eee6;
+  --color-card: #fffdf8;
+  --color-line: #ddd4c6;
+  --color-mute: #6b645c;
+  --color-accent: #c24d2c;
+  --color-accent-2: #1f6f5b;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--color-paper);
+  color: var(--color-ink);
+}
+
+.font-display {
+  font-family: var(--font-display);
+}

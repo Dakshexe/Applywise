@@ -1,0 +1,13 @@
+{
+  "name": "applywise",
+  "version": "1.0.0",
+  "private": true,
+  "description": "MERN job board with candidate applications and recruiter dashboard",
+  "scripts": {
+    "dev": "concurrently -n server,client -c blue,green \"npm run dev --prefix server\" \"npm run dev --prefix client\"",
+    "seed": "npm run seed --prefix server"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
